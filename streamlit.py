@@ -57,5 +57,7 @@ if query:
     with st.spinner("Fetching insights..."):
         context = vector_db.query_context(query)
         response = crew_agent.get_response(query, context)
+        st.write(context)
+        st.write("\n")
         st.write("### Agent Response:")
         st.write(response)

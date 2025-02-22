@@ -5,6 +5,10 @@ Created on Sat Feb 22 16:57:07 2025
 @author: USER
 """
 import os
+from dotenv import load_dotenv
+from googleapiclient.discovery import build
+
+load_dotenv()
 # YouTubeDataFetcher
 class YouTubeDataFetcher:
     def __init__(self):

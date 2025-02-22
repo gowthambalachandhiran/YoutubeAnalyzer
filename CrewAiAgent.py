@@ -4,15 +4,15 @@ Created on Sat Feb 22 16:58:42 2025
 
 @author: USER
 """
+import os
+import google.generativeai as genai
 
 class CrewAIAgent:
     def __init__(self):
-        self.model = "gemini"
+        self.model = genai.GenerativeModel("gemini-pro")
+        genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
     
     def get_response(self, query, context):
-        from google.generativeai import configure, generate_text
-        configure(api_key=os.getenv("GEMINI_API_KEY"))
-        
         prompt = f"""
         Given the following context extracted from YouTube channel data:
         {context}
@@ -20,5 +20,5 @@ class CrewAIAgent:
         {query}
         """
         
-        response = generate_text(prompt=prompt)
+        response = self.model.generate_content(prompt)
         return response.text if response else "I'm unable to generate a response."
