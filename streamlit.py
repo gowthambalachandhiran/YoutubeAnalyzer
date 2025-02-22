@@ -48,7 +48,7 @@ if st.button("Fetch Data"):
             
             # Step 2: Store in VectorDB
             with st.spinner("Storing data in VectorDB..."):
-                vector_db.store_data(all_data)
+                vector_db.replace_data(all_data)
                 st.success("Data stored in VectorDB!")
 
 # Step 3: User inputs query
@@ -56,8 +56,9 @@ query = st.text_input("Ask a question about this channel:")
 if query:
     with st.spinner("Fetching insights..."):
         context = vector_db.query_context(query)
+        st.write("### Retrieved Context:")
+        st.json(context)  # Show retrieved context for debugging
+
         response = crew_agent.get_response(query, context)
-        st.write(context)
-        st.write("\n")
         st.write("### Agent Response:")
         st.write(response)
