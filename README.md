@@ -44,6 +44,23 @@ This application leverages the power of Google's Gemini Pro model and Streamlit 
 * Google generativeai python library.
 * Google API python client.
 * A google api key.
+## Usage of the app
+* Go to https://youtubeanalyzer-data.streamlit.app/
+Type a name of the youtube Channel
+![image](https://github.com/user-attachments/assets/b0ebcf67-8a35-4632-9946-8a09af45ff40)
+
+* Next click the getch data button
+![image](https://github.com/user-attachments/assets/7095c15a-eec6-4400-8409-2a51dfe548ca)
+ * Now you would see a text box where you can prompt the question on the channel
+![image](https://github.com/user-attachments/assets/2c63c403-20e5-458e-8246-71213d30e936)
+* The above question will give you a nice insight on the query asked based on the vectorDB chunk or context it had received
+  ![image](https://github.com/user-attachments/assets/29f2fbb7-1f4d-4f34-a8a4-43b3203cc1f6)
+*It  will not just stop there . It would also give you ince visuals if you click visualization
+![image](https://github.com/user-attachments/assets/8d9c0421-dce8-4081-86ac-106c15b1cf84)
+
+
+
+
 
 ## Installation
 
