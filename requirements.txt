@@ -7,3 +7,4 @@ jsonpickle==4.0.2
 sentence-transformers==3.4.1
 python-dotenv==1.0.1
 google-api-python-client==2.162.0
+google-generativeai==0.8.4
