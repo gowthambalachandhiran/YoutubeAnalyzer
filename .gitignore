@@ -2,3 +2,4 @@ youtube
 .env
 .gitattributes
 .spyproject
+.streamlit

@@ -7,12 +7,12 @@ Created on Sat Feb 22 16:57:07 2025
 import os
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
-
+import streamlit as st
 load_dotenv()
 # YouTubeDataFetcher
 class YouTubeDataFetcher:
     def __init__(self):
-        self.api_key = os.getenv("YOUTUBE_API_KEY")
+        self.api_key = st.secrets["YOUTUBE_API_KEY"]
         if not self.api_key:
             raise ValueError("YOUTUBE_API_KEY environment variable not set.")
         self.youtube = build('youtube', 'v3', developerKey=self.api_key)

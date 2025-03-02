@@ -9,7 +9,7 @@ import google.generativeai as genai
 
 class CrewAIAgent:
     def __init__(self):
-        self.model = genai.GenerativeModel("gemini-pro")
+        self.model = genai.GenerativeModel("models/gemini-2.0-flash-thinking-exp-1219")
         genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
     
     def get_response(self, query, context):
