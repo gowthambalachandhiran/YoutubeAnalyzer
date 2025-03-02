@@ -6,3 +6,4 @@ faiss-cpu==1.10.0
 jsonpickle==4.0.2
 sentence-transformers==3.4.1
 python-dotenv==1.0.1
+google-api-python-client==2.162.0
