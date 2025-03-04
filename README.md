@@ -49,7 +49,7 @@ This application leverages the power of Google's Gemini Pro model and Streamlit 
 Type a name of the youtube Channel
 ![image](https://github.com/user-attachments/assets/b0ebcf67-8a35-4632-9946-8a09af45ff40)
 
-* Next click the getch data button
+* Next click the fetch data button
 ![image](https://github.com/user-attachments/assets/7095c15a-eec6-4400-8409-2a51dfe548ca)
  * Now you would see a text box where you can prompt the question on the channel
 ![image](https://github.com/user-attachments/assets/2c63c403-20e5-458e-8246-71213d30e936)
